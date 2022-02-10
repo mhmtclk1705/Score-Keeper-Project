@@ -43,4 +43,6 @@ resetButton.addEventListener("click", () => {
   player2Score.disabled = false;
   player2Score.style.opacity = 1;
   player1Score.style.opacity = 1;
+  player2Table.style.color = "black";
+    player1Table.style.color = "black";
 });
