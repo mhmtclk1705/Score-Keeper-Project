@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+        .container{
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 4px 10px 16px rgba(0,0,0,0.2) ;
+            height:688px ;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .header__logo{
+            margin-bottom: 20px;
+        }
+        .header__logo img{
+            width: 315px;
+            height: 67px;
+        }
+        .content__image img{
+            width: 315px;
+        }
+        .score{
+            margin: 30px;
+            text-align: center;
+        }
+        .score p{
+            margin: 20px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .button button{
+            margin: 1px;
+            border: none;
+            
+            padding: 16px 8px;
+            height: 47px;
+            width: 160px;
+            position: relative;
+            bottom: -35px;
+        }
+        #player1_button{
+            background-color: #90EE90;
+        }
+        #player2_button{
+            background-color: #ADD8E6;
+        }
+        #reset_button{
+            background-color: #FFC9CE;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header__logo"><img src="img/CLARUSWAY_LOGO.png" alt=""></div>
+        <div class="content__image"><img src="img/istockphoto-514992044-1024x1024.jpg" alt=""></div>
+        <div class="score">
+            <h1>Scores</h1>
+            <p><span id="player1_score">0</span> to <span id="player2_score">0</span></p>
+        </div>
+        <div class="win">Score to Win <input type="number" id="win_number" value="5"></div>
+        <div class="button"><button id="player1_button">+1 for Player 1</button><button id="player2_button">+1 for Player 2</button><button id="reset_button">RESET</button></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
